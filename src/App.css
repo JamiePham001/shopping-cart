@@ -6,17 +6,19 @@ body {
   height: 100%;
 }
 
-.page-container {
-  width: 100vw;
-  height: 80vh;
+.pageWrapper {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 3em;
 }
 
 .button-container {
   display: flex;
   gap: 2em;
+}
+
+.pageContent {
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }

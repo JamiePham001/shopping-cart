@@ -1,17 +1,24 @@
-import "../styles/card.css";
+import style from "../styles/Card.module.css";
+import { Link } from "react-router-dom";
+import { CheckDecimal } from "../functions/checkDecimal";
+import { Slugify } from "../functions/Slugify";
 
-export const Card = ({ rotation, children }) => {
+export const Card = ({ object }) => {
   return (
-    <div className="flip-card">
-      <div
-        className="flip-card-inner"
-        style={{ transform: `rotateY(${rotation}deg)` }}
-      >
-        <div className="flip-card-front">
-          <h1>{children}</h1>
-        </div>
-        <div className="flip-card-back"></div>
+    <Link
+      to={`/products/${Slugify(object.title)}`}
+      className={style.card}
+      state={object}
+    >
+      <div className={style.imageContainer}>
+        <img className={style.image} src={object.image} alt="" />
       </div>
-    </div>
+      <div className={style.desc}>
+        <div className={style.itemName}>
+          <b>{object.title}</b>
+        </div>
+        <div className={style.price}>${CheckDecimal(object.price)}</div>
+      </div>
+    </Link>
   );
 };

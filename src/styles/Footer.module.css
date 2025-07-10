@@ -1,0 +1,52 @@
+.footer {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid grey;
+}
+
+.footerContainer {
+  width: var(--page-width);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.socials {
+  display: flex;
+  gap: 2rem;
+}
+
+.icon {
+  height: 30px;
+  width: 30px;
+  background-size: contain;
+  background-position: center;
+  transition: transform 250ms linear;
+}
+
+.facebook {
+  composes: icon;
+  background-image: url("../assets/facebook.svg");
+}
+
+.instagram {
+  composes: icon;
+  background-image: url("../assets/instagram.svg");
+}
+
+.facebook:hover,
+.instagram:hover {
+  transform: scale(1.15);
+}
+
+.copyright {
+  font-size: 12px;
+}
+
+.shopLink {
+  composes: linkStyle from "../styles/NavBar.module.css";
+}

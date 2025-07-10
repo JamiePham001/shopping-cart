@@ -1,0 +1,40 @@
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner {
+  background-image: url("../assets/banner2.png");
+  background-size: cover;
+  background-position: top center;
+  width: 100vw;
+  height: 600px;
+}
+
+.productSection {
+  display: flex;
+  flex-direction: column;
+  /* padding-top: 3rem; */
+  width: 100%;
+}
+
+.subheading {
+  font-size: 25px;
+  padding-bottom: 2rem;
+}
+
+.productsContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 3rem;
+}
+
+.container {
+  max-width: var(--page-width);
+  padding: 3rem calc(var(--page-width) * 0.03);
+  /* padding: 0px 3vw; */
+  margin: 0 auto;
+  /* box-sizing: border-box; */
+}

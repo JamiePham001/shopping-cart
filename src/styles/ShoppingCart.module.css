@@ -1,0 +1,34 @@
+.page {
+  composes: page from "../styles/ProductPage.module.css";
+}
+
+.shoppingCart {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.cartMsg {
+  font-size: 35px;
+}
+
+.shoppingBtn {
+  font-size: 20px;
+  padding: 15px 30px;
+  background-color: black;
+  border: none;
+  cursor: pointer;
+  transition: transform 250ms ease-out;
+}
+
+.shoppingBtn:hover {
+  transform: scale(1.05);
+}
+
+.emptyCartContainer {
+  /* display: flex;
+  justify-content: center;
+  flex-direction: column; */
+}

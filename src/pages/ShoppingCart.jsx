@@ -14,7 +14,7 @@ const EmptyCart = () => {
 };
 
 export const ShoppingCart = () => {
-  const { cart, setCart } = useOutletContext();
+  const { cart } = useOutletContext();
 
   return (
     <div className={style.page}>

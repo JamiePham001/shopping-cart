@@ -5,7 +5,7 @@ import {
   useParams,
   Link,
 } from "react-router-dom";
-import { CheckDecimal } from "../functions/checkDecimal";
+import { CheckDecimal } from "../functions/CheckDecimal";
 import { QuantitySelect } from "../components/QuantitySelect";
 import { Slugify } from "../functions/Slugify";
 import { useState } from "react";

@@ -1,6 +1,6 @@
 import style from "../styles/Card.module.css";
 import { Link } from "react-router-dom";
-import { CheckDecimal } from "../functions/checkDecimal";
+import { CheckDecimal } from "../functions/CheckDecimal";
 import { Slugify } from "../functions/Slugify";
 
 export const Card = ({ object }) => {

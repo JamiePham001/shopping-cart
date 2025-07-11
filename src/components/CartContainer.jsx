@@ -2,7 +2,7 @@ import style from "../styles/CartContainer.module.css";
 import { QuantitySelect } from "../components/QuantitySelect";
 import { useOutletContext, Link } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { CheckDecimal } from "../functions/checkDecimal";
+import { CheckDecimal } from "../functions/CheckDecimal";
 import { Slugify } from "../functions/Slugify";
 
 const CartItem = ({ object, setCart, cart }) => {
